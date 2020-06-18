@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <meta charset="UTF-8">
+    <title>title</title>
+  
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+		switch($('#your_input_id').val())
+    {
+    	case 1223:
+      $('#dni1').show();
+				break;
+      
+    	
+    }
+
+    $('#your_input_id').on('change',function(){
+        
+    	switch($(this).val())
+      {
+        case "1223":
+        $('#dni1').show();
+        break;
+        	
+      }
+        
+      
+    
+    })
+})
+</script>
+	<style>
+	#dni1 {
+    display: none;
+}
+
+
+	</style>
+  </head>
+  <body>
+ <input  id="your_input_id" type="text" class="input"/>
+ <div id="dni1">
+ <h2>Nombre</h2>
+  <h4>DNI</h4>
+    <p>link</p>
+
+ </div>
+  </body>
+</html>
